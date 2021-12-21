@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
 import Header from "./components/header";
-import inputBar from "./components/inputBar";
+import InputBar from "./components/inputBar";
 
 function App() {
   return (
    <div>
-      <inputBar />
+    <Header />      
+    <InputBar />
     </div>
   );
 }

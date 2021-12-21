@@ -1,12 +1,12 @@
-import React, { Fragment } from "react";
-import Header from "./components/header";
+import React from "react";
+import NavsBar from "./components/navsBar";
 import InputBar from "./components/inputBar";
 
 function App() {
   return (
-   <div>
-    <Header />      
-    <InputBar />
+    <div>
+      <NavsBar />
+      <InputBar />
     </div>
   );
 }

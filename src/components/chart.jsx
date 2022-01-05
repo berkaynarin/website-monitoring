@@ -32,8 +32,9 @@ class Histogram extends Component {
             <Chart
               options={this.state.options}
               series={this.state.series}
-              type="bar"
+              type="line"
               width="500"
+              height="300"
             />
           </div>
         </div>

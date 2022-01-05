@@ -37,8 +37,11 @@ code {
 .table {
   width: 50%;
   margin: auto;
+  margin-top: 40px;
 }
 
-.monitor-content {
-  text-align: center;
+.mixed-chart {
+  max-width: 500px;
+  padding-top: 40px;
+  margin-left: 338px;
 }

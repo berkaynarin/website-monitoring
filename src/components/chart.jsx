@@ -33,7 +33,7 @@ class Histogram extends Component {
               options={this.state.options}
               series={this.state.series}
               type="line"
-              width="500"
+              width="700"
               height="300"
             />
           </div>

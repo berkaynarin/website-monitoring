@@ -26,10 +26,6 @@ code {
   padding-top: 22px;
 }
 
-.navbar {
-  margin-bottom: 50px;
-}
-
 .logo-img {
   width: 100px;
 }
@@ -41,7 +37,22 @@ code {
 }
 
 .mixed-chart {
-  max-width: 500px;
+  max-width: 700px;
   padding-top: 40px;
   margin-left: 338px;
+}
+
+.histogram-content {
+  margin: auto;
+}
+
+.card {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.card-group {
+  margin: auto;
+  margin-top: 40px;
+  max-width: 700px;
 }

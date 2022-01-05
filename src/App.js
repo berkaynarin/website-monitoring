@@ -3,16 +3,16 @@ import NavsBar from "./components/navsBar";
 import InputBar from "./components/inputBar";
 import TimeTable from "./components/table";
 import Histogram from "./components/chart";
+import Card from "./components/card";
 
 function App() {
   return (
     <div>
       <NavsBar />
-      <div className="monitor-content">
-        <InputBar />
-        <TimeTable />
-        <Histogram />
-      </div>
+      <InputBar />
+      <TimeTable />
+      <Histogram />
+      <Card />
     </div>
   );
 }

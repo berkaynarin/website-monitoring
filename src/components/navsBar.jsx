@@ -1,33 +1,25 @@
 import React from "react";
+import srcLogo from "../images/navsBar-logo.png";
 
 const NavsBar = () => {
   return (
-    <ul class="navsBar nav nav-tabs flex-column bg-dark">
-      <a class="navbar-brand" href="#">
-        <img
-          src="public/assets/images/navsBar-logo.png"
-          alt="navbar-logo"
-          width="30"
-          height="24"
-        />
-      </a>
+    <ul class="navsBar nav flex-column bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src={srcLogo} alt="" width="80" height="65" />
+          <br />
+          Website Monitoring
+        </a>
+      </div>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          Active
+        <a class="nav-link active" aria-current="page" href="#">
+          Download Time
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
-          Link
+          Availability Time
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          Link
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
       </li>
     </ul>
   );

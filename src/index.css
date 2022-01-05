@@ -1,5 +1,5 @@
 body {
-  margin-top: 20px;
+  margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -12,11 +12,33 @@ code {
     monospace;
 }
 
-.input-group {
-  max-width: 1150px;
+.inputBar {
+  max-width: 800px;
+  padding-top: 40px;
 }
 
 .navsBar {
   height: 100%;
   position: fixed;
+  text-align: center;
+  width: 15%;
+  font-size: large;
+  padding-top: 22px;
+}
+
+.navbar {
+  margin-bottom: 50px;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.table {
+  width: 50%;
+  margin: auto;
+}
+
+.monitor-content {
+  text-align: center;
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const InputBar = () => {
   return (
-    <div class="input-group m-auto">
+    <div class="inputBar input-group m-auto">
       <input
         type="text"
         class="form-control"

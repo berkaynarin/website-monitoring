@@ -1,6 +1,8 @@
 import React from "react";
+import { ReactDOM } from "react";
 import Chart from "react-apexcharts";
 import { Component } from "react/cjs/react.production.min";
+import axios from "axios";
 
 let responseItem = [];
 const reqItems = [
@@ -18,9 +20,17 @@ const reqItems = [
   },
 ];
 
-reqItems.map((item) => responseItem.push(item.responseTime));
-
 class Histogram extends Component {
+  componentDidMount() {
+    this.refreshList();
+  }
+
+  refreshList = () => {
+    axios
+      .get("/api/webMonitor/")
+      .then(reqItems.map((item) => responseItem.push(item.responseTime)))
+      .catch((err) => console.log(err));
+  };
   constructor(props) {
     super(props);
     this.state = {

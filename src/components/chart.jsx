@@ -2,23 +2,40 @@ import React from "react";
 import Chart from "react-apexcharts";
 import { Component } from "react/cjs/react.production.min";
 
+let responseItem = [];
+const reqItems = [
+  {
+    id: 1,
+    responseCode: "400",
+    currentDate: "2022-02-15T23:27:11.982220",
+    responseTime: "0.342",
+  },
+  {
+    id: 2,
+    responseCode: "201",
+    currentDate: "2022-02-15T23:27:11.982220",
+    responseTime: "0.423",
+  },
+];
+
+reqItems.map((item) => responseItem.push(item.responseTime));
+
 class Histogram extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       options: {
         chart: {
           id: "basic-bar",
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+          categories: ["24H", "20H", "16H", "12H", "8H", "4H", "2H", "1H"],
         },
       },
       series: [
         {
           name: "series-1",
-          data: [30, 40, 45, 50, 49, 60, 70, 91],
+          data: responseItem,
         },
       ],
     };
